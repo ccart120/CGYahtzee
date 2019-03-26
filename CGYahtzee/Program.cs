@@ -196,7 +196,7 @@ namespace Yahtzee
                     //the greatest frequency becomes the maxScore
                     maxScore = currentFrequency;
                 }
-                currentFrequency = 0;
+                //currentFrequency = 0;
                 i++;
             }
             return (maxScore);
@@ -216,7 +216,7 @@ namespace Yahtzee
             for (int i = 0; i < remainingDice; i++)
             {
                 
-                diceRolls[i] = new Random().Next(1, 6);
+                diceRolls[i] = new Random().Next(1, 7);
 
             }
             return diceRolls;
